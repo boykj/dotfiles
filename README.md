@@ -1,3 +1,3 @@
-#README for Dotfiles
+# README for Dotfiles
 
 Jacob Boyk
