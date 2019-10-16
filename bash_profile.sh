@@ -1,4 +1,20 @@
 # add ~/.bash_profile if needed for executing ~/.bashrc
+echo "Hello"
+
+#		Set Color
+
+export BLOCKSIZE=1k
+
+
+#		Alias Asignment
+
+alias c='clear'
+alias ..='cd ../'
+alias g='git status'
+alias gl='git log'
+
+
+
 if [ -e ~/.bashrc -a ! -e ~/.bash_profile -a ! -e ~/.bash_login -a ! -e ~/.profile ]; then
   printf "\n\033[31mWARNING: Found ~/.bashrc but no ~/.bash_profile, ~/.bash_login or ~/.profile.\033[m\n\n"
   echo "This looks like an incorrect setup."
@@ -9,3 +25,4 @@ if [ -e ~/.bashrc -a ! -e ~/.bash_profile -a ! -e ~/.bash_login -a ! -e ~/.profi
 	test -f ~/.bashrc && . ~/.bashrc
 	EOF
 fi
+
