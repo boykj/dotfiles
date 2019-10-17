@@ -1,6 +1,9 @@
 # add ~/.bash_profile if needed for executing ~/.bashrc
+export PATH="$HOME/bin:$PATH";
+source ~/bash.bashrc
 echo "Hello"
 echo $USER
+
 #		Set Color
 
 export PATH=$PATH:"C:\Program Files\Git\bin"

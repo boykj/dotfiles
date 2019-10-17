@@ -77,3 +77,36 @@ unset _ps1_symbol
 
 # Fixup git-bash in non login env
 shopt -q login_shell || . /etc/profile.d/git-prompt.sh
+
+#########################
+#		Set Color		#
+#########################
+PS1='\[\033]0;Git Bash:${PWD//[^[:ascii:]]/?}\007\]' # set window title to Git Bash:path
+
+COLOR_OCHRE="\033[38;5;95m"
+#export PS1="\\w\$(__git_ps1 '(%s)') \$ "	#Git branch
+export BLOCKSIZE=1k				#	Set Cursor to block
+#PS1="$PS1"'\[\033[m\]'
+
+
+PS1="$PS1"'\n'					#	New line
+PS1="$PS1"'\[\033[37m\]'		#	Time stamp color = grey
+PS1="$PS1"' \d  ≈ '				#	Date stamp
+PS1="$PS1"' \T '				#	Time Stamp
+
+PS1="$PS1"'\n'					#	New line
+PS1="$PS1"'\[\033[32m\]'		#	Sets User color to green
+PS1="$PS1"'\u@\h ►'				#	Displays user
+
+PS1="$PS1"'\[\033[03;36m\]'		#	Change directory color back to Cyan and begins italics for directory
+PS1="$PS1"'\w '					#	Working directory
+#PS1="$PS1'\W'
+
+PS1="$PS1"'\n'					#	New line
+PS1="$PS1"'\[\033[23;31m\]'		#	Change color to red and turns off italics
+PS1="$PS1"'∟ Ω Input ► '       	# 	Changes the prompt to " || Input:
+PS1="$PS1"'\[\033[33m\]'		#	Sets uses input text to dim yellow
+
+####################################
+#			End of Color		   #		
+####################################
