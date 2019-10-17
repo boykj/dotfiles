@@ -34,6 +34,11 @@ if [[ -n "$SSH_CONNECTION" ]] && [[ "$PATH" != *:/usr/bin* ]]; then
     source /etc/profile
 fi
 
+# Load bashrc from .bash_profile
+if [ -f ~/.bash_profile ]; then
+  . ~/.bash_profile
+fi
+
 # Warnings
 unset _warning_found
 for _warning_prefix in '' ${MINGW_PREFIX}; do
