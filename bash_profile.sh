@@ -3,18 +3,42 @@ export PATH="$HOME/bin:$PATH";
 source ~/bash.bashrc
 echo "Hello"
 echo $USER
+<<<<<<< HEAD
 
 #		Set Color
+=======
+echo $git status
+
+###############
+#	Exports	  #
+###############
+>>>>>>> fabbb33ab0033eea85603db3d9081e33b2648b0a
 
 export PATH=$PATH:"C:\Program Files\Git\bin"
+export PATH="$PATH:/usr/local/bin/"
+export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 
-PS1="$PS1"'\[\033[36m\]'       # Change color to cyan
+source bash.bashrc
+######################
+#	End of Exports   #
+######################
+
+
+##################
+#	Set Colors	 #
+##################
+
+#	Set Command line color to green
+PS1="$PS1"'\[\033[32m\]'       		# Changes promtp color to green
+PS1="$PS1"'| Enter Command | '		# Changes prompt to | Enter Command |
+PS1="$PS1"'\[\033[33m\]'		    # Changes default font to yellow
 
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-PS1="$PS1"'| - Jacob: '                  # prompt: always $
-PS1="$PS1"'\[\033[31m\]'		   # Change to red
-#source bash.bashrc
+
+#PS1="$PS1"'| Enter Command | '                  # Changes prompt to | Enter Command |
+#PS1="$PS1"'\[\033[33m\]'		   # Changes default font to yellow
+
 
 if [ -e ~/.bashrc -a ! -e ~/.bash_profile -a ! -e ~/.bash_login -a ! -e ~/.profile ]; then
   printf "\n\033[31mWARNING: Found ~/.bashrc but no ~/.bash_profile, ~/.bash_login or ~/.profile.\033[m\n\n"
