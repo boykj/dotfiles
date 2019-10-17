@@ -1,19 +1,17 @@
 # add ~/.bash_profile if needed for executing ~/.bashrc
 echo "Hello"
-
+echo $USER
 #		Set Color
 
-export BLOCKSIZE=1k
+export PATH=$PATH:"C:\Program Files\Git\bin"
 
+PS1="$PS1"'\[\033[36m\]'       # Change color to cyan
 
-#		Alias Asignment
-
-alias c='clear'
-alias ..='cd ../'
-alias g='git status'
-alias gl='git log'
-
-
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+PS1="$PS1"'| - Jacob: '                  # prompt: always $
+PS1="$PS1"'\[\033[31m\]'		   # Change to red
+#source bash.bashrc
 
 if [ -e ~/.bashrc -a ! -e ~/.bash_profile -a ! -e ~/.bash_login -a ! -e ~/.profile ]; then
   printf "\n\033[31mWARNING: Found ~/.bashrc but no ~/.bash_profile, ~/.bash_login or ~/.profile.\033[m\n\n"
