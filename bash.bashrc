@@ -86,6 +86,7 @@ shopt -q login_shell || . /etc/profile.d/git-prompt.sh
 #########################
 #		Set Color		#
 #########################
+
 PS1='\[\033]0;Git Bash:${PWD//[^[:ascii:]]/?}\007\]' # set window title to Git Bash:path
 
 COLOR_OCHRE="\033[38;5;95m"
@@ -101,11 +102,13 @@ PS1="$PS1"' \T '				#	Time Stamp
 
 PS1="$PS1"'\n'					#	New line
 PS1="$PS1"'\[\033[32m\]'		#	Sets User color to green
-PS1="$PS1"'\u@\h ►'				#	Displays user
+PS1="$PS1"'\u@\h ► '				#	Displays user
 
 PS1="$PS1"'\[\033[03;36m\]'		#	Change directory color back to Cyan and begins italics for directory
 PS1="$PS1"'\w '					#	Working directory
 #PS1="$PS1'\W'
+
+PS1="$PS1"'`__git_ps1`'
 
 PS1="$PS1"'\n'					#	New line
 PS1="$PS1"'\[\033[23;31m\]'		#	Change color to red and turns off italics
