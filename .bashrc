@@ -9,20 +9,6 @@
 
 # System-wide bashrc file
 
-
-#	#### > ALIAS LISTING < #### 
-alias c='clear'
-alias ..='cd ../'
-alias g='git status'
-alias gl='git log'
-
-#	####	> TEXT COLOR <	####
-PS1="$PS1"'\[\033[36m\]'       # Change color to cyan
-
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
-PS1="$PS1"'\[\033[31m\]'		   # Change to red
-
 # Check that we haven't already been sourced.
 ([[ -z ${CYG_SYS_BASHRC} ]] && CYG_SYS_BASHRC="1") || return
 
@@ -32,11 +18,6 @@ PS1="$PS1"'\[\033[31m\]'		   # Change to red
 # If started from sshd, make sure profile is sourced
 if [[ -n "$SSH_CONNECTION" ]] && [[ "$PATH" != *:/usr/bin* ]]; then
     source /etc/profile
-fi
-
-# Load bashrc from .bash_profile
-if [ -f ~/.bash_profile ]; then
-  . ~/.bash_profile
 fi
 
 # Warnings
@@ -105,12 +86,20 @@ PS1="$PS1"'\u@\h ►'				#	Displays user
 
 PS1="$PS1"'\[\033[03;36m\]'		#	Change directory color back to Cyan and begins italics for directory
 PS1="$PS1"'\w '					#	Working directory
-#PS1="$PS1'\W'
+PS1="$PS1"'`__git_ps1`'   		# bash function
 
 PS1="$PS1"'\n'					#	New line
 PS1="$PS1"'\[\033[23;31m\]'		#	Change color to red and turns off italics
 PS1="$PS1"'∟ Ω Input ► '       	# 	Changes the prompt to " || Input:
 PS1="$PS1"'\[\033[33m\]'		#	Sets uses input text to dim yellow
+
+alias g='git status'
+alias gl='git log'
+alias c='clear'
+alias ..='cd ..'
+alias gp='git push'
+alias gpom='git push origin master'
+alias sa='ls -al'
 
 ####################################
 #			End of Color		   #		

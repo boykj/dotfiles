@@ -3,20 +3,18 @@ export PATH="$HOME/bin:$PATH";
 source ~/bash.bashrc
 echo "Hello"
 echo $USER
-<<<<<<< HEAD
 
 #		Set Color
-=======
-echo $git status
+
+#echo $git status
 
 ###############
 #	Exports	  #
 ###############
->>>>>>> fabbb33ab0033eea85603db3d9081e33b2648b0a
 
-export PATH=$PATH:"C:\Program Files\Git\bin"
-export PATH="$PATH:/usr/local/bin/"
-export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
+#export PATH=$PATH:"C:\Program Files\Git\bin"
+#xport PATH="$PATH:/usr/local/bin/"
+#export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
 
 source bash.bashrc
 ######################
@@ -29,12 +27,12 @@ source bash.bashrc
 ##################
 
 #	Set Command line color to green
-PS1="$PS1"'\[\033[32m\]'       		# Changes promtp color to green
-PS1="$PS1"'| Enter Command | '		# Changes prompt to | Enter Command |
-PS1="$PS1"'\[\033[33m\]'		    # Changes default font to yellow
+#PS1="$PS1"'\[\033[32m\]'       		# Changes promtp color to green
+#PS1="$PS1"'| Enter Command | '		# Changes prompt to | Enter Command |
+#PS1="$PS1"'\[\033[33m\]'		    # Changes default font to yellow
 
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+#export CLICOLOR=1
+#export LSCOLORS=GxFxCxDxBxegedabagaced
 
 #PS1="$PS1"'| Enter Command | '                  # Changes prompt to | Enter Command |
 #PS1="$PS1"'\[\033[33m\]'		   # Changes default font to yellow
