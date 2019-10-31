@@ -2,4 +2,17 @@
 test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 
-source .bashrc
+export FRUIT="banana"
+export PHRASE="$FRUIT $FRUIT"
+alias f="echo $FRUIT"
+echo $PHRASE
+
+alias g='git status'
+alias gl='git log'
+alias c='clear'
+alias ..='cd ..'
+alias gp='git push'
+alias gpom='git push origin master'
+alias sa='ls -al'
+alias ga="git add ."
+alias gc="git commit"

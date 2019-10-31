@@ -96,13 +96,6 @@ PS1="$PS1"'\[\033[23;31m\]'		#	Change color to red and turns off italics
 PS1="$PS1"'∟ Ω Input ► '       	# 	Changes the prompt to " || Input:
 PS1="$PS1"'\[\033[33m\]'		#	Sets uses input text to dim yellow
 
-alias g='git status'
-alias gl='git log'
-alias c='clear'
-alias ..='cd ..'
-alias gp='git push'
-alias gpom='git push origin master'
-alias sa='ls -al'
 
 ####################################
 #			End of Color		   #		
