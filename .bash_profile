@@ -22,3 +22,4 @@ alias ga="git add ."
 alias gc="git commit"
 alias gp='git push'
 alias gpom='git push origin master'
+alias notepad="/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
