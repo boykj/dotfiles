@@ -2,17 +2,23 @@
 test -f ~/.profile && . ~/.profile
 test -f ~/.bashrc && . ~/.bashrc
 
+
 export FRUIT="banana"
 export PHRASE="$FRUIT $FRUIT"
 alias f="echo $FRUIT"
 echo $PHRASE
 
-alias g='git status'
-alias gl='git log'
+#Basic shell alias list:
 alias c='clear'
 alias ..='cd ..'
-alias gp='git push'
-alias gpom='git push origin master'
 alias sa='ls -al'
+alias cd+="cd I:\OSU"
+
+
+#Git alias list:
+alias g='git status'
+alias gl='git log'
 alias ga="git add ."
 alias gc="git commit"
+alias gp='git push'
+alias gpom='git push origin master'
