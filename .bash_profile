@@ -23,3 +23,4 @@ alias gc="git commit"
 alias gp='git push'
 alias gpom='git push origin master'
 alias notepad="/c/Program\ Files\ \(x86\)/Notepad++/notepad++.exe"
+alias subl="/c/Program\ Files/Sublime\ Text\ 3/sublime_text.exe"
